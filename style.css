@@ -32,14 +32,14 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientShift 4s ease infinite;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
 }
 
 .nav-links {
