@@ -118,10 +118,10 @@ form.addEventListener('submit', async (e) => {
             throw new Error('Configure a URL do Google Apps Script');
         }
 
-        const response = await fetch(GOOGLE_SHEETS_URL, {
+        await fetch(GOOGLE_SHEETS_URL, {
             method: 'POST',
             mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'text/plain' },
             body: JSON.stringify(data)
         });
 
