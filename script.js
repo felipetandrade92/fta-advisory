@@ -104,7 +104,11 @@ form.addEventListener('submit', async (e) => {
         email: document.getElementById('email').value,
         telefone: document.getElementById('telefone').value,
         cpf: document.getElementById('cpf').value,
+        profissao: document.getElementById('profissao').value,
         renda: document.getElementById('renda').value,
+        patrimonio: document.getElementById('patrimonio').value,
+        estadoCivil: document.getElementById('estadoCivil').value,
+        dependentes: document.getElementById('dependentes').value,
         objetivo: document.getElementById('objetivo').value,
         data: new Date().toLocaleString('pt-BR')
     };

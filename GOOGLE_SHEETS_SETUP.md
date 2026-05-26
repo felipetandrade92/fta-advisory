@@ -10,8 +10,12 @@
    - D1: Email
    - E1: Telefone
    - F1: CPF
-   - G1: Renda
-   - H1: Objetivo
+   - G1: Profissao
+   - H1: Renda
+   - I1: Patrimonio
+   - J1: Estado Civil
+   - K1: Dependentes
+   - L1: Objetivo
 
 ## Passo 2: Criar o Apps Script
 1. Na planilha, vá em Extensoes > Apps Script
@@ -29,7 +33,11 @@ function doPost(e) {
     data.email,
     data.telefone,
     data.cpf,
+    data.profissao,
     data.renda,
+    data.patrimonio,
+    data.estadoCivil,
+    data.dependentes,
     data.objetivo
   ]);
   
