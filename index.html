@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTA Advisory — Consultoria Financeira</title>
+    <title>FTA Advisory — Consultoria e Planejamento Financeiro</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <a href="#sobre" class="nav-logo"><img src="img/logo.png" alt="FTA Advisory"></a>
+        <a href="#inicio" class="nav-logo"><img src="img/logo.png" alt="FTA Advisory"></a>
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#inicio">Início</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Menu">
@@ -22,7 +21,8 @@
         </button>
     </nav>
 
-    <header class="hero" id="sobre">
+    <!-- HERO -->
+    <header class="hero" id="inicio">
         <div class="hero-bg-shapes">
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
@@ -33,257 +33,174 @@
                 <img src="img/foto.png" alt="Felipe Teixeira de Andrade">
             </div>
             <p class="hero-greeting">FTA Advisory</p>
-            <h1 class="hero-name">Felipe Teixeira de Andrade</h1>
-            <p class="hero-role">Consultoria Financeira</p>
+            <h1 class="hero-name">Consultoria &amp; Planejamento Financeiro</h1>
             <p class="hero-description">
-                Mais de 10 anos de experiência no mercado financeiro, atuando em uma grande instituição bancária.
-                Especialista em planejamento financeiro, gestão patrimonial e consultoria de investimentos.
+                Transformamos sua relação com o dinheiro. Planejamento financeiro personalizado,
+                gestão de investimentos e proteção patrimonial para você e sua família.
             </p>
             <div class="hero-cta">
-                <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
-                <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+                <a href="#servicos" class="btn btn-primary">Conheça Nossos Serviços</a>
+                <a href="#contato" class="btn btn-outline">Agende uma Consulta</a>
             </div>
         </div>
     </header>
 
-    <!-- SEÇÃO PRINCIPAL: SERVIÇOS DE CONSULTORIA (75% do foco) -->
+    <!-- SERVIÇOS PRINCIPAIS -->
     <section class="servicos" id="servicos">
         <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Soluções completas para cada etapa da sua vida financeira.</p>
+
+            <div class="servicos-grid">
+                <!-- Serviço 1 -->
+                <div class="servico-card">
+                    <div class="servico-icon-wrap icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+                    </div>
+                    <h3>Planejamento Financeiro</h3>
+                    <p>Análise completa da sua situação financeira atual e definição de metas de curto, médio e longo prazo. Orçamento pessoal, controle de gastos e estratégias para alcançar seus objetivos.</p>
+                    <ul class="servico-list">
+                        <li>Diagnóstico financeiro completo</li>
+                        <li>Definição de metas e prioridades</li>
+                        <li>Orçamento pessoal e familiar</li>
+                        <li>Plano de ação personalizado</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="servico-card">
+                    <div class="servico-icon-wrap icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Educação Financeira</h3>
+                    <p>Capacitação para que você tome decisões financeiras inteligentes e autônomas. Entenda o mercado, aprenda a investir e construa uma mentalidade financeira saudável.</p>
+                    <ul class="servico-list">
+                        <li>Workshops e mentorias individuais</li>
+                        <li>Conceitos de investimentos</li>
+                        <li>Inteligência emocional financeira</li>
+                        <li>Formação de hábitos financeiros</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="servico-card">
+                    <div class="servico-icon-wrap icon-red">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Seguridade &amp; Gestão de Riscos</h3>
+                    <p>Proteção completa contra imprevistos. Análise e mitigação de riscos pessoais, patrimoniais e específicos para garantir a segurança financeira da sua família.</p>
+                    <ul class="servico-list">
+                        <li>Análise de riscos pessoais e patrimoniais</li>
+                        <li>Seguros e previdência privada</li>
+                        <li>Fundo de emergência estratégico</li>
+                        <li>Plano de contingência financeira</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="servico-card">
+                    <div class="servico-icon-wrap icon-gold">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+                    </div>
+                    <h3>Consultoria de Investimentos</h3>
+                    <p>Orientação especializada para alocação inteligente do seu capital. Análise de perfil, diversificação e acompanhamento contínuo da sua carteira de investimentos.</p>
+                    <ul class="servico-list">
+                        <li>Análise de perfil de investidor</li>
+                        <li>Diversificação de carteira</li>
+                        <li>Renda fixa, variável e fundos</li>
+                        <li>Planejamento de aposentadoria</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="servico-card">
+                    <div class="servico-icon-wrap icon-navy">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Assessoria Patrimonial</h3>
+                    <p>Gestão estratégica do seu patrimônio. Organização patrimonial, planejamento sucessório e tributário para preservar e multiplicar sua riqueza entre gerações.</p>
+                    <ul class="servico-list">
+                        <li>Organização patrimonial completa</li>
+                        <li>Planejamento sucessório</li>
+                        <li>Planejamento tributário</li>
+                        <li>Proteção e perpetuação do patrimônio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIRÂMIDE -->
+    <section class="piramide-section">
+        <div class="container">
             <h2 class="section-title">Inteligência Financeira</h2>
-            <p class="servicos-subtitulo">Soluções completas para sua vida financeira, do planejamento à proteção do seu patrimônio.</p>
-
-            <!-- PIRÂMIDE DE SERVIÇOS -->
+            <p class="section-subtitle">Nossa metodologia de trabalho integrada, da base ao topo.</p>
             <div class="piramide">
-                <!-- Nível 1 - Topo -->
                 <div class="piramide-nivel nivel-1">
-                    <div class="nivel-header">
-                        <h3>Gestão Patrimonial</h3>
-                    </div>
+                    <div class="nivel-header"><h3>Gestão Patrimonial</h3></div>
                     <div class="nivel-items">
-                        <div class="nivel-card">
-                            <div class="nivel-icon">📋</div>
-                            <span>Organização Patrimonial</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">🔄</div>
-                            <span>Planejamento Sucessório</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">📑</div>
-                            <span>Planejamento Tributário</span>
-                        </div>
+                        <div class="nivel-card"><div class="nivel-icon">📋</div><span>Organização Patrimonial</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">🔄</div><span>Planejamento Sucessório</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">📑</div><span>Planejamento Tributário</span></div>
                     </div>
                 </div>
-
-                <!-- Nível 2 -->
                 <div class="piramide-nivel nivel-2">
-                    <div class="nivel-header">
-                        <h3>Gestão de Ativos</h3>
-                    </div>
+                    <div class="nivel-header"><h3>Gestão de Ativos</h3></div>
                     <div class="nivel-items">
-                        <div class="nivel-card">
-                            <div class="nivel-icon">🏦</div>
-                            <span>Reservas</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">📊</div>
-                            <span>Diversificação</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">🏖️</div>
-                            <span>Aposentadoria</span>
-                        </div>
+                        <div class="nivel-card"><div class="nivel-icon">🏦</div><span>Reservas</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">📊</div><span>Diversificação</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">🏖️</div><span>Aposentadoria</span></div>
                     </div>
                 </div>
-
-                <!-- Nível 3 -->
                 <div class="piramide-nivel nivel-3">
-                    <div class="nivel-header">
-                        <h3>Gestão de Riscos</h3>
-                    </div>
+                    <div class="nivel-header"><h3>Gestão de Riscos</h3></div>
                     <div class="nivel-items">
-                        <div class="nivel-card">
-                            <div class="nivel-icon">❤️</div>
-                            <span>Riscos Pessoais</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">🚗</div>
-                            <span>Riscos Patrimoniais</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">⚖️</div>
-                            <span>Riscos Específicos</span>
-                        </div>
+                        <div class="nivel-card"><div class="nivel-icon">❤️</div><span>Riscos Pessoais</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">🚗</div><span>Riscos Patrimoniais</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">⚖️</div><span>Riscos Específicos</span></div>
                     </div>
                 </div>
-
-                <!-- Nível 4 - Base -->
                 <div class="piramide-nivel nivel-4">
-                    <div class="nivel-header">
-                        <h3>Gestão Financeira</h3>
-                    </div>
+                    <div class="nivel-header"><h3>Gestão Financeira</h3></div>
                     <div class="nivel-items">
-                        <div class="nivel-card">
-                            <div class="nivel-icon">🎯</div>
-                            <span>Metas e Prioridades</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">📝</div>
-                            <span>Orçamento Pessoal</span>
-                        </div>
-                        <div class="nivel-card">
-                            <div class="nivel-icon">📚</div>
-                            <span>Educação Financeira</span>
-                        </div>
+                        <div class="nivel-card"><div class="nivel-icon">🎯</div><span>Metas e Prioridades</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">📝</div><span>Orçamento Pessoal</span></div>
+                        <div class="nivel-card"><div class="nivel-icon">📚</div><span>Educação Financeira</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DIFERENCIAIS -->
-    <section class="diferenciais">
+    <!-- SOBRE / CREDENCIAIS -->
+    <section class="sobre" id="sobre">
         <div class="container">
-            <h2 class="section-title">Por que a FTA Advisory?</h2>
-            <div class="sobre-grid">
-                <div class="sobre-card">
-                    <div class="card-icon">🏦</div>
-                    <h3>+10 Anos de Mercado</h3>
-                    <p>Mais de uma década de experiência no mercado financeiro, atuando em uma grande instituição bancária nacional.</p>
-                </div>
-                <div class="sobre-card">
-                    <div class="card-icon">📊</div>
-                    <h3>Planejamento Personalizado</h3>
-                    <p>Cada cliente recebe um plano financeiro sob medida, alinhado aos seus objetivos de curto, médio e longo prazo.</p>
-                </div>
-                <div class="sobre-card">
-                    <div class="card-icon">🛡️</div>
-                    <h3>Proteção Patrimonial</h3>
-                    <p>Estratégias de gestão de riscos e planejamento sucessório para proteger e perpetuar seu patrimônio.</p>
-                </div>
-                <div class="sobre-card">
-                    <div class="card-icon">🎓</div>
-                    <h3>Certificações ANBIMA</h3>
-                    <p>Profissional certificado CPA, C-Pro R e C-Pro I, garantindo excelência e conformidade regulatória.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CERTIFICAÇÕES -->
-    <section class="certificacoes">
-        <div class="container">
-            <h2 class="section-title">Certificações</h2>
-            <div class="cert-row">
-                <div class="cert-card cert-green-bg">
-                    <span class="cert-label">ANBIMA</span>
-                    <h3>CPA</h3>
-                    <p>Certificação Profissional ANBIMA</p>
-                </div>
-                <div class="cert-card cert-blue-bg">
-                    <span class="cert-label">ANBIMA</span>
-                    <h3>C-Pro R</h3>
-                    <p>Certificação de Produtos de Renda</p>
-                </div>
-                <div class="cert-card cert-gold-bg">
-                    <span class="cert-label">ANBIMA</span>
-                    <h3>C-Pro I</h3>
-                    <p>Certificação de Produtos de Investimento</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPERIÊNCIA (resumida) -->
-    <section class="experiencia" id="experiencia">
-        <div class="container">
-            <h2 class="section-title">Trajetória Profissional</h2>
-            <p class="exp-resumo">Mais de 10 anos no mercado financeiro, evoluindo de operações bancárias a gestão de unidade em uma das maiores instituições financeiras do país.</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2021 — 2025</span>
-                        <h3>Gerente de Unidade</h3>
-                        <p class="timeline-company">Grande Instituição Financeira</p>
-                        <ul class="timeline-list">
-                            <li>Gestão operacional e estratégica de unidade bancária, atendendo clientes PF, PJ e órgãos públicos</li>
-                            <li>Liderança de equipe multidisciplinar com foco em excelência e satisfação do cliente</li>
-                        </ul>
+            <h2 class="section-title">Quem Somos</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <h3>Felipe Teixeira de Andrade</h3>
+                    <p class="sobre-cargo">Fundador — FTA Advisory</p>
+                    <p>Mais de 10 anos de experiência no mercado financeiro, atuando em uma das maiores instituições bancárias do país. Trajetória que vai de operações bancárias à gestão de unidade, passando por consultoria de investimentos para clientes de alta renda.</p>
+                    <p>Formação multidisciplinar com MBAs, pós-graduações e graduações em áreas de finanças, gestão e tecnologia. Profissional certificado pela ANBIMA.</p>
+                    <div class="sobre-certs">
+                        <span class="cert-tag cert-green">CPA</span>
+                        <span class="cert-tag cert-blue">C-Pro R</span>
+                        <span class="cert-tag cert-gold">C-Pro I</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2019 — 2021</span>
-                        <h3>Gerente de Relacionamento — Alta Renda</h3>
-                        <p class="timeline-company">Grande Instituição Financeira</p>
-                        <ul class="timeline-list">
-                            <li>Consultoria financeira personalizada para clientes de alta renda</li>
-                            <li>Soluções de investimento customizadas para diferentes perfis de risco</li>
-                        </ul>
+                <div class="sobre-numeros">
+                    <div class="numero-item">
+                        <span class="numero">+10</span>
+                        <span class="numero-label">Anos de Mercado</span>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2013 — 2019</span>
-                        <h3>Operações Bancárias &amp; Gestão Empresarial</h3>
-                        <p class="timeline-company">Grande Instituição Financeira</p>
-                        <ul class="timeline-list">
-                            <li>Análise de crédito, prospecção e gestão de carteira empresarial</li>
-                            <li>Operações financeiras e atendimento de excelência ao cliente</li>
-                        </ul>
+                    <div class="numero-item">
+                        <span class="numero">3</span>
+                        <span class="numero-label">Certificações ANBIMA</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FORMAÇÃO -->
-    <section class="formacao" id="formacao">
-        <div class="container">
-            <h2 class="section-title">Formação Acadêmica</h2>
-            <div class="formacao-grid">
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">MBA</span>
-                    <h3>Engenharia de Software</h3>
-                    <p class="formacao-inst">FAMEESP — São Paulo, SP</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">MBA</span>
-                    <h3>Gestão de Organização Empresarial</h3>
-                    <p class="formacao-inst">FAMEESP — São Paulo, SP</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">MBA</span>
-                    <h3>Design de Jogos Digitais</h3>
-                    <p class="formacao-inst">FAMEESP — São Paulo, SP</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">Pós</span>
-                    <h3>Docência em Ciência e Tecnologia da Informação</h3>
-                    <p class="formacao-inst">Facuminas — Brasília, DF</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">Pós</span>
-                    <h3>Docência em Gestão Financeira</h3>
-                    <p class="formacao-inst">Facuminas — Brasília, DF</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">Esp.</span>
-                    <h3>Ciência Política e Gestão Pública</h3>
-                    <p class="formacao-inst">Facuminas — Brasília, DF</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">GRA</span>
-                    <h3>Estatística</h3>
-                    <p class="formacao-inst">Universidade Federal do Amazonas — Manaus, AM</p>
-                </div>
-                <div class="formacao-card">
-                    <span class="formacao-badge concluido">GRA</span>
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                    <p class="formacao-inst">Uninorte — Manaus, AM</p>
+                    <div class="numero-item">
+                        <span class="numero">8</span>
+                        <span class="numero-label">Formações Acadêmicas</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -292,14 +209,14 @@
     <!-- CONTATO -->
     <section class="contato" id="contato">
         <div class="container">
-            <h2 class="section-title">Vamos Conversar?</h2>
-            <p class="contato-texto">Pronto para ajudar você a alcançar seus objetivos financeiros.</p>
+            <h2 class="section-title">Agende sua Consultoria</h2>
+            <p class="contato-texto">Dê o primeiro passo para transformar sua vida financeira. Entre em contato e vamos construir juntos o seu plano.</p>
             <div class="contato-links">
                 <a href="mailto:advisoryfta@gmail.com" class="contato-btn">
                     <span class="contato-icon">✉️</span>
                     advisoryfta@gmail.com
                 </a>
-                <a href="https://wa.me/5592992972550" target="_blank" class="contato-btn">
+                <a href="https://wa.me/5592992972550" target="_blank" class="contato-btn contato-whatsapp">
                     <svg class="contato-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
                     (92) 99297-2550
                 </a>
