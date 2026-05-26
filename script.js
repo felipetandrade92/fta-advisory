@@ -1,6 +1,6 @@
 // ===== GOOGLE SHEETS URL =====
 // SUBSTITUA pela URL do seu Google Apps Script (ver instruções)
-const GOOGLE_SHEETS_URL = 'SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI';
+const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxAXa4A0JGO4wC_Nf8KAslFP5AhTYP_kl7kvC3NxBg-mOO8hsQiw4V86y8SUtW1pl5a/exec';
 
 // ===== INTERSECTION OBSERVER =====
 const observer = new IntersectionObserver((entries) => {
