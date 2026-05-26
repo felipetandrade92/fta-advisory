@@ -65,6 +65,7 @@
                         <li>Orçamento pessoal e familiar</li>
                         <li>Plano de ação personalizado</li>
                     </ul>
+                    <button class="btn-servico" data-servico="Planejamento Financeiro">Solicitar Consultoria</button>
                 </div>
 
                 <!-- Serviço 2 -->
@@ -80,6 +81,7 @@
                         <li>Inteligência emocional financeira</li>
                         <li>Formação de hábitos financeiros</li>
                     </ul>
+                    <button class="btn-servico" data-servico="Educação Financeira">Solicitar Consultoria</button>
                 </div>
 
                 <!-- Serviço 3 -->
@@ -95,6 +97,7 @@
                         <li>Fundo de emergência estratégico</li>
                         <li>Plano de contingência financeira</li>
                     </ul>
+                    <button class="btn-servico" data-servico="Seguridade e Gestão de Riscos">Solicitar Consultoria</button>
                 </div>
 
                 <!-- Serviço 4 -->
@@ -110,6 +113,7 @@
                         <li>Renda fixa, variável e fundos</li>
                         <li>Planejamento de aposentadoria</li>
                     </ul>
+                    <button class="btn-servico" data-servico="Consultoria de Investimentos">Solicitar Consultoria</button>
                 </div>
 
                 <!-- Serviço 5 -->
@@ -125,6 +129,7 @@
                         <li>Planejamento tributário</li>
                         <li>Proteção e perpetuação do patrimônio</li>
                     </ul>
+                    <button class="btn-servico" data-servico="Assessoria Patrimonial">Solicitar Consultoria</button>
                 </div>
             </div>
         </div>
@@ -228,6 +233,55 @@
             <p class="contato-local">📍 Manaus, AM — Brasil</p>
         </div>
     </section>
+
+    <!-- MODAL FORMULÁRIO -->
+    <div class="modal-overlay" id="modalForm">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title">Solicitar Consultoria</h2>
+            <p class="modal-servico" id="modalServico"></p>
+            <form id="formConsultoria">
+                <input type="hidden" name="servico" id="inputServico">
+                <div class="form-group">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp *</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
+                    </div>
+                    <div class="form-group">
+                        <label for="renda">Faixa de Renda Mensal</label>
+                        <select id="renda" name="renda">
+                            <option value="">Selecione...</option>
+                            <option value="Até R$ 3.000">Até R$ 3.000</option>
+                            <option value="R$ 3.000 - R$ 7.000">R$ 3.000 - R$ 7.000</option>
+                            <option value="R$ 7.000 - R$ 15.000">R$ 7.000 - R$ 15.000</option>
+                            <option value="R$ 15.000 - R$ 30.000">R$ 15.000 - R$ 30.000</option>
+                            <option value="Acima de R$ 30.000">Acima de R$ 30.000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="objetivo">Qual seu principal objetivo financeiro?</label>
+                    <textarea id="objetivo" name="objetivo" rows="3" placeholder="Ex: Organizar minhas finanças, planejar aposentadoria, proteger meu patrimônio..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit" id="btnSubmit">Enviar Solicitação</button>
+                <p class="form-msg" id="formMsg"></p>
+            </form>
+        </div>
+    </div>
 
     <footer class="footer">
         <p>&copy; 2026 Prodigium Technology. All rights reserved.</p>

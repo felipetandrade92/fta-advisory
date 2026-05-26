@@ -107,6 +107,30 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #2c3e50; overf
 .contato-svg { width: 1.3rem; height: 1.3rem; color: #25D366; flex-shrink: 0; }
 .contato-local { margin-top: 2rem; color: #7a8a9a; font-size: 0.95rem; }
 
+/* BOTÃO SERVIÇO */
+.btn-servico { display: block; width: 100%; margin-top: 1.2rem; padding: 0.75rem; background: linear-gradient(135deg, #1a3a5c, #244e78); color: #fff; border: none; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; transition: all 0.3s; }
+.btn-servico:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,58,92,0.25); }
+
+/* MODAL */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; align-items: center; justify-content: center; padding: 1rem; backdrop-filter: blur(4px); }
+.modal-overlay.active { display: flex; }
+.modal { background: #fff; border-radius: 16px; padding: 2.5rem; max-width: 560px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.2); animation: modalIn 0.3s ease; }
+@keyframes modalIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.modal-close { position: absolute; top: 1rem; right: 1.2rem; background: none; border: none; font-size: 1.8rem; color: #888; cursor: pointer; line-height: 1; transition: color 0.2s; }
+.modal-close:hover { color: #1a3a5c; }
+.modal-title { font-size: 1.5rem; font-weight: 900; color: #1a3a5c; margin-bottom: 0.3rem; }
+.modal-servico { color: #c9a84c; font-weight: 700; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: #1a3a5c; margin-bottom: 0.3rem; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.92rem; font-family: inherit; color: #2c3e50; transition: border-color 0.3s; background: #f8f9fa; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #c9a84c; background: #fff; box-shadow: 0 0 0 3px rgba(201,168,76,0.1); }
+.form-group textarea { resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.btn-submit { width: 100%; margin-top: 0.5rem; border: none; padding: 1rem; font-size: 1rem; border-radius: 50px; }
+.form-msg { text-align: center; margin-top: 1rem; font-size: 0.9rem; font-weight: 600; }
+.form-msg.success { color: #1e8449; }
+.form-msg.error { color: #c0392b; }
+
 /* FOOTER */
 .footer { text-align: center; padding: 2rem; color: #fff; font-size: 0.85rem; background: #1a3a5c; }
 
@@ -130,6 +154,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #2c3e50; overf
     .sobre-content { grid-template-columns: 1fr; gap: 2rem; }
     .sobre-numeros { flex-direction: row; flex-wrap: wrap; justify-content: center; }
     .numero-item { flex: 1; min-width: 140px; }
+    .form-row { grid-template-columns: 1fr; }
     .contato-links { flex-direction: column; align-items: center; }
     .contato-btn { width: 100%; max-width: 320px; justify-content: center; }
 }
