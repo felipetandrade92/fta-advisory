@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.15 });
 
-document.querySelectorAll('.sobre-card, .timeline-item, .formacao-card, .skill-group, .extra-box').forEach((el, i) => {
+document.querySelectorAll('.sobre-card, .timeline-item, .formacao-card, .skill-group, .extra-box, .piramide-nivel, .cert-card').forEach((el, i) => {
     el.style.transitionDelay = `${(i % 4) * 0.1}s`;
     observer.observe(el);
 });
@@ -25,9 +25,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    navbar.style.background = window.scrollY > 50
-        ? 'rgba(10, 10, 26, 0.95)'
-        : 'rgba(10, 10, 26, 0.85)';
+    navbar.style.boxShadow = window.scrollY > 50
+        ? '0 2px 30px rgba(0, 0, 0, 0.08)'
+        : '0 2px 20px rgba(0, 0, 0, 0.05)';
 });
 
 document.querySelector('.nav-toggle')?.addEventListener('click', () => {
