@@ -186,11 +186,34 @@
                     <h3>Felipe Teixeira de Andrade</h3>
                     <p class="sobre-cargo">Fundador — FTA Advisory</p>
                     <p>Mais de 10 anos de experiência no mercado financeiro, atuando em uma das maiores instituições bancárias do país. Trajetória que vai de operações bancárias à gestão de unidade, passando por consultoria de investimentos para clientes de alta renda.</p>
-                    <p>Formação multidisciplinar com MBAs, pós-graduações e graduações em áreas de finanças, gestão e tecnologia. Profissional certificado pela ANBIMA.</p>
+
                     <div class="sobre-certs">
+                        <h4>Certificações ANBIMA</h4>
                         <span class="cert-tag cert-green">CPA</span>
                         <span class="cert-tag cert-blue">C-Pro R</span>
                         <span class="cert-tag cert-gold">C-Pro I</span>
+                    </div>
+
+                    <div class="sobre-historico">
+                        <h4>Trajetória Profissional</h4>
+                        <ul class="historico-list">
+                            <li><strong>Fundador — FTA Advisory</strong> <span class="historico-periodo">2025 - Atual</span><br>Consultoria e planejamento financeiro personalizado</li>
+                            <li><strong>Gerente de Unidade</strong> <span class="historico-periodo">2020 - 2025</span><br>Gestão de equipe, metas e carteira de clientes</li>
+                            <li><strong>Consultor de Investimentos</strong> <span class="historico-periodo">2017 - 2020</span><br>Assessoria para clientes de alta renda</li>
+                            <li><strong>Operações Bancárias</strong> <span class="historico-periodo">2013 - 2017</span><br>Início da carreira no mercado financeiro</li>
+                        </ul>
+                    </div>
+
+                    <div class="sobre-academico">
+                        <h4>Formação Acadêmica</h4>
+                        <ul class="historico-list">
+                            <li><strong>GRA. Estatística</strong> — Universidade Federal do Amazonas (UFAM)</li>
+                            <li><strong>GRA. Análise e Desenvolvimento de Sistemas</strong></li>
+                            <li><strong>MBA Gestão Financeira</strong></li>
+                            <li><strong>MBA Gestão de Negócios</strong></li>
+                            <li><strong>Pós-Graduação em Mercado de Capitais</strong></li>
+                            <li><strong>Pós-Graduação em Investimentos e Finanças</strong></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="sobre-numeros">
@@ -315,8 +338,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="objetivo">Qual seu principal objetivo financeiro?</label>
-                    <textarea id="objetivo" name="objetivo" rows="3" placeholder="Ex: Organizar minhas finanças, planejar aposentadoria, proteger meu patrimônio..."></textarea>
+                    <label for="objetivo">Qual seu principal objetivo?</label>
+                    <select id="objetivo" name="objetivo">
+                        <option value="">Selecione...</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary btn-submit" id="btnSubmit">Enviar Solicitação</button>
                 <p class="form-msg" id="formMsg"></p>

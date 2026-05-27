@@ -47,6 +47,39 @@ const form = document.getElementById('formConsultoria');
 const formMsg = document.getElementById('formMsg');
 const btnSubmit = document.getElementById('btnSubmit');
 
+const objetivosMap = {
+    'Planejamento Financeiro': [
+        'Diagnóstico financeiro completo',
+        'Definição de metas e prioridades',
+        'Orçamento pessoal e familiar',
+        'Plano de ação personalizado'
+    ],
+    'Educação Financeira': [
+        'Workshops e mentorias individuais',
+        'Conceitos de investimentos',
+        'Inteligência emocional financeira',
+        'Formação de hábitos financeiros'
+    ],
+    'Seguridade e Gestão de Riscos': [
+        'Análise de riscos pessoais e patrimoniais',
+        'Seguros e previdência privada',
+        'Fundo de emergência estratégico',
+        'Plano de contingência financeira'
+    ],
+    'Consultoria de Investimentos': [
+        'Análise de perfil de investidor',
+        'Diversificação de carteira',
+        'Renda fixa, variável e fundos',
+        'Planejamento de aposentadoria'
+    ],
+    'Assessoria Patrimonial': [
+        'Organização patrimonial completa',
+        'Planejamento sucessório',
+        'Planejamento tributário',
+        'Proteção e perpetuação do patrimônio'
+    ]
+};
+
 document.querySelectorAll('.btn-servico').forEach(btn => {
     btn.addEventListener('click', () => {
         const servico = btn.getAttribute('data-servico');
@@ -56,6 +89,18 @@ document.querySelectorAll('.btn-servico').forEach(btn => {
         formMsg.className = 'form-msg';
         form.reset();
         inputServico.value = servico;
+
+        // Popula o select de objetivo com as opções do serviço
+        const selectObj = document.getElementById('objetivo');
+        selectObj.innerHTML = '<option value="">Selecione...</option>';
+        const opcoes = objetivosMap[servico] || [];
+        opcoes.forEach(op => {
+            const option = document.createElement('option');
+            option.value = op;
+            option.textContent = op;
+            selectObj.appendChild(option);
+        });
+
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     });

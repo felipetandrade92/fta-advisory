@@ -85,7 +85,12 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #2c3e50; overf
 .sobre-texto h3 { font-size: 1.5rem; font-weight: 900; color: #1a3a5c; margin-bottom: 0.3rem; }
 .sobre-cargo { color: #c9a84c; font-weight: 700; font-size: 1rem; margin-bottom: 1.2rem; }
 .sobre-texto p { color: #5a6a7a; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
-.sobre-certs { display: flex; gap: 0.6rem; margin-top: 1.5rem; }
+.sobre-certs { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
+.sobre-certs h4, .sobre-historico h4, .sobre-academico h4 { width: 100%; font-size: 1.05rem; color: #1a3a5c; margin-bottom: 0.3rem; }
+.sobre-historico, .sobre-academico { margin-top: 1.8rem; }
+.historico-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.8rem; }
+.historico-list li { padding-left: 1.2rem; border-left: 3px solid #c9a84c; font-size: 0.92rem; line-height: 1.5; }
+.historico-periodo { color: #c9a84c; font-size: 0.82rem; font-weight: 600; margin-left: 0.5rem; }
 .cert-tag { padding: 0.5rem 1.2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.03em; }
 .cert-green { background: rgba(39,174,96,0.1); color: #1e8449; border: 1px solid rgba(39,174,96,0.25); }
 .cert-blue { background: rgba(26,58,92,0.1); color: #1a3a5c; border: 1px solid rgba(26,58,92,0.2); }
