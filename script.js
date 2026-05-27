@@ -118,11 +118,11 @@ form.addEventListener('submit', async (e) => {
             throw new Error('Configure a URL do Google Apps Script');
         }
 
-        await fetch(GOOGLE_SHEETS_URL, {
+        const response = await fetch(GOOGLE_SHEETS_URL, {
             method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'text/plain' },
-            body: JSON.stringify(data)
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(data),
+            redirect: 'follow'
         });
 
         formMsg.textContent = 'Solicitação enviada com sucesso! Entraremos em contato em breve.';
@@ -132,8 +132,22 @@ form.addEventListener('submit', async (e) => {
         setTimeout(() => closeModal(), 3000);
 
     } catch (error) {
-        formMsg.textContent = 'Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.';
-        formMsg.className = 'form-msg error';
+        // Fallback: tenta com no-cors (alguns navegadores bloqueiam CORS)
+        try {
+            await fetch(GOOGLE_SHEETS_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify(data)
+            });
+            formMsg.textContent = 'Solicitação enviada com sucesso! Entraremos em contato em breve.';
+            formMsg.className = 'form-msg success';
+            form.reset();
+            setTimeout(() => closeModal(), 3000);
+        } catch (err) {
+            formMsg.textContent = 'Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.';
+            formMsg.className = 'form-msg error';
+        }
     }
 
     btnSubmit.disabled = false;
